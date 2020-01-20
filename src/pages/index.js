@@ -1,25 +1,29 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Post from "../components/Post"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Now go build something great.</p>
+    <div style={{ textAlign: "center" }}>
+      <h1 style={{ margin: "0 0 13px 0" }}>Hi people</h1>
+      <p>Let's build something great.</p>
+    </div>
+
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div> */}
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
     {data.allMarkdownRemark.edges.map(post => (
-      <li key={post.node.id}>
-        <Link to={post.node.frontmatter.path}>
-          {post.node.frontmatter.title}
-        </Link>
-      </li>
+      <Post
+        key={post.node.id}
+        path={post.node.frontmatter.path}
+        title={post.node.frontmatter.title}
+        description={post.node.frontmatter.description}
+      />
     ))}
   </Layout>
 )
@@ -33,6 +37,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            description
           }
         }
       }

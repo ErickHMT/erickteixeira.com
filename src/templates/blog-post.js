@@ -7,9 +7,11 @@ export default function Post({ data }) {
 
   return (
     <Layout>
+      <Link to="/" style={{ marginBottom: "20px" }}>
+        &#60;&#60; Voltar
+      </Link>
       <h2>{post.frontmatter.title}</h2>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <Link to="/">Voltar</Link>
     </Layout>
   )
 }

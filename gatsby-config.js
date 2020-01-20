@@ -1,16 +1,24 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby DGD`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Simple blog.`,
     author: `Erick Teixeira <erickhenriquemota@gmail.com>`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/posts`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -28,13 +36,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/posts`,
-        name: "posts",
-      },
-    },
     `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
