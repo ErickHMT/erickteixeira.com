@@ -2,7 +2,7 @@
 path: "/first-post"
 date: 2019-01-03 05:54:23
 title: "Primeiro teste"
-description: "Just a test"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar at arcu sit amet malesuada. Nam sagittis ut eros vitae auctor. "
 tags:
   - gatsby
   - reactjs

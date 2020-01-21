@@ -10,21 +10,17 @@ ul {
   list-style: none;
 }
 
-a {
-  color: #fff;
-}
-
 li {
-  margin: 15px 10px 0 10px;
+  margin: 5px 10px 0 10px;
   cursor: pointer;
   transition: color 0.5s;
 }
 
 li:hover {
   color: #fff;
-  border-bottom: 2px solid #fff;
+  border-bottom: 5px solid #159bb1;
 }
 
-li::selection {
-  color: red;
+.nav-item {
+  color: #fff;
 }

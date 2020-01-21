@@ -12,21 +12,38 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ display: "inline", margin: "0", width: "200px" }}>
+      <h1
+        style={{
+          fontSize: "1.5rem",
+          display: "inline",
+          margin: "0",
+          width: "200px",
+        }}
+      >
         <Link to="/" style={{ color: "#FFF" }}>
           {siteTitle}
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to="/about">Sobre</Link>
-        </li>
-        {/* <li>Contato</li> */}
-        <li>
-          <a href="http://artstation.com/erickhmt">Artstation</a>
+          <Link className="nav-item" to="/about">
+            Sobre
+          </Link>
         </li>
         <li>
-          <a href="http://github.com/erickhmt">Github</a>
+          <Link className="nav-item" to="/contact">
+            Contato
+          </Link>
+        </li>
+        <li>
+          <a className="nav-item" href="http://artstation.com/erickhmt">
+            Artstation
+          </a>
+        </li>
+        <li>
+          <a className="nav-item" href="http://github.com/erickhmt">
+            Github
+          </a>
         </li>
       </ul>
     </div>

@@ -10,8 +10,11 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <div style={{ textAlign: "center" }}>
-      <h1 style={{ margin: "0 0 13px 0" }}>Hi people</h1>
-      <p>Let's build something great.</p>
+      <h1 style={{ margin: "0 0 13px 0" }}>Welcome</h1>
+      <p>
+        Let's build something great. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Omnis quisquam veniam sint odit.
+      </p>
     </div>
 
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -23,6 +26,8 @@ const IndexPage = ({ data }) => (
         path={post.node.frontmatter.path}
         title={post.node.frontmatter.title}
         description={post.node.frontmatter.description}
+        date={post.node.frontmatter.date}
+        tags={post.node.frontmatter.tags}
       />
     ))}
   </Layout>
@@ -38,6 +43,8 @@ export const pageQuery = graphql`
             title
             path
             description
+            date
+            tags
           }
         }
       }
