@@ -1,0 +1,63 @@
+.contactSection {
+    background: #e2e2e2;
+}
+
+.contactContent {
+    display: flex;
+    max-width: 1200px;
+    padding: 50px 0;
+    margin: auto;
+    justify-content: flex-end;
+}
+
+.contactInfo {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+}
+
+.contactInfo h3 {
+    margin: 0
+}
+
+.socialIcon {
+    margin: 5px;
+}
+
+.contactForm {
+    max-width: 500px;
+}
+
+.formControl {
+    display: flex;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 3px;
+    outline: 0;
+    border: 1px solid #949494; 
+}
+
+.contactForm textarea {
+    resize: vertical;
+}
+
+.formButton {
+    display: inherit;
+    border: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.formButton:hover {
+    border: 0;
+    padding: 10px 15px;
+}
