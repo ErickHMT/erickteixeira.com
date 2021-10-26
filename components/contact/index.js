@@ -10,11 +10,11 @@ export default function Contact() {
                     <p>erickhenriquemota@gmail.com</p>
 
                     <div>
-                        <a href="https://www.instagram.com/erickhmart/" target="_blank" className={styles.socialIcon}>
-                            <img src="/icons/instagram.svg" rel="noreferrer" alt="Icone instagram" width={20} height={20} />
+                        <a href="https://www.instagram.com/erickhmart/" rel="noreferrer" target="_blank" className={styles.socialIcon}>
+                            <img src="/icons/instagram.svg" alt="Icone instagram" width={20} height={20} />
                         </a>
-                        <a href="https://www.linkedin.com/in/erickhmt/" target="_blank" className={styles.socialIcon}>
-                            <img src="/icons/linkedin.svg" rel="noreferrer" alt="Icone linkedin" width={20} height={20} />
+                        <a href="https://www.linkedin.com/in/erickhmt/" rel="noreferrer" target="_blank" className={styles.socialIcon}>
+                            <img src="/icons/linkedin.svg" alt="Icone linkedin" width={20} height={20} />
                         </a>
                     </div>
                 </div>
