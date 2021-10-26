@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Contact() {
     return(
-        <div className={styles.contactSection}>
+        <div className={styles.contactSection} id="contact">
             <div className={styles.contactContent}>
                 <div className={styles.contactInfo}>
                     <h3>CONTATO</h3>
@@ -11,10 +11,10 @@ export default function Contact() {
 
                     <div>
                         <a href="https://www.instagram.com/erickhmart/" target="_blank" className={styles.socialIcon}>
-                            <img src="/icons/instagram.svg" alt="Icone instagram" width={20} height={20} />
+                            <img src="/icons/instagram.svg" rel="noreferrer noopener" alt="Icone instagram" width={20} height={20} />
                         </a>
                         <a href="https://www.linkedin.com/in/erickhmt/" target="_blank" className={styles.socialIcon}>
-                            <img src="/icons/linkedin.svg" alt="Icone linkedin" width={20} height={20} />
+                            <img src="/icons/linkedin.svg" rel="noreferrer noopener" alt="Icone linkedin" width={20} height={20} />
                         </a>
                     </div>
                 </div>
