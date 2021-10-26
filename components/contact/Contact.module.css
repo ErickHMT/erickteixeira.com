@@ -55,9 +55,12 @@
     cursor: pointer;
     margin-left: auto;
     justify-content: flex-end;
+    background: #ea842d;
+    color: #fff;
+    border-radius: 3px;
+    transition: .5s;
 }
 
 .formButton:hover {
-    border: 0;
-    padding: 10px 15px;
+    background: #c06f2a;
 }

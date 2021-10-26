@@ -14,7 +14,6 @@ import dependency from '../public/img/drawings/dependency.png'
 import fairy from '../public/img/drawings/fairy.png'
 import carregador from '../public/img/drawings/carregador.png'
 import descanso from '../public/img/drawings/descanso.png'
-
 import habilities from '../public/img/drawings/habilities.png'
 import flowerPicker from '../public/img/drawings/flowerPicker.png'
 import flowerWarrior from '../public/img/drawings/flowerWarrior.png'
@@ -35,6 +34,22 @@ import travel from '../public/img/drawings/travel.png'
 import treeGuy from '../public/img/drawings/tree-guy.png'
 import umbrellaGuy from '../public/img/drawings/umbrella-guy.png'
 
+import ceita from '../public/img/illustrations/ceita.jpg'
+import ciberpunk from '../public/img/illustrations/ciberpunk1.png'
+import curiosity from '../public/img/illustrations/curiosity.jpg'
+import scavenger from '../public/img/illustrations/scavenger.png'
+import postApocalipticHover from '../public/img/illustrations/postApocalipticHover.jpg'
+import hermioneGranger from '../public/img/illustrations/hermioneGranger.png'
+import kvothe from '../public/img/illustrations/kvothe.jpg'
+import afraid from '../public/img/illustrations/afraid.png'
+import ozob from '../public/img/illustrations/ozob.jpg'
+import protection from '../public/img/illustrations/protection.jpg'
+import rizzo from '../public/img/illustrations/rizzo.png'
+import musician from '../public/img/illustrations/musician.jpg'
+import smartphone from '../public/img/illustrations/smartphone1.png'
+import soldado from '../public/img/illustrations/soldado.jpg'
+import thinker from '../public/img/illustrations/thinker.png'
+
 export default function Home() {
   return (
     <>
@@ -47,8 +62,33 @@ export default function Home() {
 
       <main className={styles.galeryContainer}>
 
-        {/* <h2>SKETCHES</h2>
-        <p>Seleção de rabiscos aleatórios</p> */}
+        <div className={styles.sectionTitle}>
+          <h2>ILLUSTRATIONS</h2>
+          <p>Seleção de ilustrações</p>
+        </div>
+
+        <div className={styles.illustrationGrid}>
+          <Image src={ceita} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={ciberpunk} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={curiosity} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={scavenger} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={postApocalipticHover} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={hermioneGranger} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={kvothe} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={afraid} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={ozob} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={protection} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={rizzo} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={musician} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={smartphone} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={soldado} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+          <Image src={thinker} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+        </div>
+
+        <div className={styles.sectionTitle}>
+          <h2>SKETCHES</h2>
+          <p>Seleção de sketches</p>
+        </div>
 
         <div className={styles.sketchGrid}>
             <Image src={controlador} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />

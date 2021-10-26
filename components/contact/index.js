@@ -11,10 +11,10 @@ export default function Contact() {
 
                     <div>
                         <a href="https://www.instagram.com/erickhmart/" target="_blank" className={styles.socialIcon}>
-                            <img src="/icons/instagram.svg" rel="noreferrer noopener" alt="Icone instagram" width={20} height={20} />
+                            <img src="/icons/instagram.svg" rel="noreferrer" alt="Icone instagram" width={20} height={20} />
                         </a>
                         <a href="https://www.linkedin.com/in/erickhmt/" target="_blank" className={styles.socialIcon}>
-                            <img src="/icons/linkedin.svg" rel="noreferrer noopener" alt="Icone linkedin" width={20} height={20} />
+                            <img src="/icons/linkedin.svg" rel="noreferrer" alt="Icone linkedin" width={20} height={20} />
                         </a>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ export default function Contact() {
                     <input type="email" placeholder="Email" name="email" />
                     <textarea placeholder="Mensagem" name="message" rows="8"></textarea>
 
-                    <button className="formButton" type="submit">Enviar</button>
+                    <button className={styles.formButton} type="submit">Enviar</button>
                 </form>
             </div>
         </div>

@@ -5,9 +5,6 @@
     color: #171717;
     padding-top: 15px;
     padding-bottom: 20px;
-    z-index: 10;
-    -webkit-box-shadow: 0px 9px 28px 25px #000000; 
-    box-shadow: 0px 9px 28px 25px #000000;
 }
   
 .headerContent {
