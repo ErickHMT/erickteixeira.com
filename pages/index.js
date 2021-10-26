@@ -3,11 +3,37 @@ import Image from 'next/image'
 import Contact from '../components/contact'
 import Header from '../components/header'
 import styles from '../styles/Home.module.css'
+import Footer from '../components/footer'
 
 import quadro1 from '../public/img/illustrations/quadro1.png'
 import quadro2 from '../public/img/illustrations/quadro2.png'
 import quadro3 from '../public/img/illustrations/quadro3.png'
-import Footer from '../components/footer'
+
+import controlador from '../public/img/drawings/controlador.png'
+import dependency from '../public/img/drawings/dependency.png'
+import fairy from '../public/img/drawings/fairy.png'
+import carregador from '../public/img/drawings/carregador.png'
+import descanso from '../public/img/drawings/descanso.png'
+
+import habilities from '../public/img/drawings/habilities.png'
+import flowerPicker from '../public/img/drawings/flowerPicker.png'
+import flowerWarrior from '../public/img/drawings/flowerWarrior.png'
+import magician from '../public/img/drawings/magician.png'
+import maskseller from '../public/img/drawings/maskseller.png'
+import explorer from '../public/img/drawings/explorer.png'
+import mechanic from '../public/img/drawings/mechanic.png'
+import menino from '../public/img/drawings/menino.jpg'
+import passeio from '../public/img/drawings/passeio.png'
+import piloto from '../public/img/drawings/piloto.png'
+import curiosa from '../public/img/drawings/curiosa.png'
+import reader from '../public/img/drawings/reader.png'
+import recovery from '../public/img/drawings/recovery.png'
+import robotUmbrella from '../public/img/drawings/robot-umbrella.png'
+import singing from '../public/img/drawings/singing.png'
+import processo from '../public/img/drawings/processo.jpg'
+import travel from '../public/img/drawings/travel.png'
+import treeGuy from '../public/img/drawings/tree-guy.png'
+import umbrellaGuy from '../public/img/drawings/umbrella-guy.png'
 
 export default function Home() {
   return (
@@ -19,16 +45,49 @@ export default function Home() {
       </Head>
       <Header />
 
-      <main className={styles.main}>
-        <div className={styles.mainImage}>
-          <Image src={quadro1} placeholder="blur" width={300} height={500} layout="fixed" objectFit="cover" />
-        </div>
-        <div className={styles.mainImage}>
-          <Image src={quadro2} placeholder="blur" width={300} height={500} layout="fixed" objectFit="cover" />
-        </div>
-        <div className={styles.mainImage}>
-          <Image src={quadro3} placeholder="blur" width={300} height={500} layout="fixed" objectFit="cover" />
-        </div>
+      <main className={styles.galeryContainer}>
+
+        {/* <h2>SKETCHES</h2>
+        <p>Seleção de rabiscos aleatórios</p> */}
+
+        <div className={styles.sketchGrid}>
+            <Image src={controlador} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={dependency} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={fairy} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={carregador} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={descanso} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={habilities} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={flowerPicker} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={flowerWarrior} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={maskseller} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={explorer} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={mechanic} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={magician} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={menino} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={passeio} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={piloto} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={curiosa} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={reader} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={recovery} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={robotUmbrella} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={singing} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={processo} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={travel} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={treeGuy} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+            <Image src={umbrellaGuy} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" /> 
+          </div>
+
+        {/* <div>
+          <span className={styles.mainImage}>
+            <Image src={quadro1} placeholder="blur" width={500} height={600} layout="intrinsic" objectFit="cover" />
+          </span>
+          <span className={styles.mainImage}>
+            <Image src={quadro2} placeholder="blur" width={500} height={600} layout="intrinsic" objectFit="cover" />
+          </span>
+          <span className={styles.mainImage}>
+            <Image src={quadro3} placeholder="blur" width={500} height={600} layout="intrinsic" objectFit="cover" />
+          </span>
+        </div> */}
       </main>
 
       <Contact />

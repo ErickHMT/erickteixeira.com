@@ -10,12 +10,12 @@ export default function Contact() {
                     <p>erickhenriquemota@gmail.com</p>
 
                     <div>
-                        <span className={styles.socialIcon}>
-                            <Image src="/icons/instagram.svg" alt="Icone instagram" width={20} height={20} />
-                        </span>
-                        <span className={styles.socialIcon}>
-                            <Image src="/icons/linkedin.svg" alt="Icone linkedin" width={20} height={20} />
-                        </span>
+                        <a href="https://www.instagram.com/erickhmart/" target="_blank" className={styles.socialIcon}>
+                            <img src="/icons/instagram.svg" alt="Icone instagram" width={20} height={20} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/erickhmt/" target="_blank" className={styles.socialIcon}>
+                            <img src="/icons/linkedin.svg" alt="Icone linkedin" width={20} height={20} />
+                        </a>
                     </div>
                 </div>
                 <form name="contact" className={styles.contactForm} method="POST" data-netlify="true">

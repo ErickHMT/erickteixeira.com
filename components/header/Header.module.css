@@ -1,8 +1,13 @@
 .header {
-    background: #191919;
-    color: rgb(235, 235, 235);
+    /* background: #191919; */
+    /* color: rgb(235, 235, 235); */
+    background: #e6e6e6;
+    color: #171717;
     padding-top: 15px;
     padding-bottom: 20px;
+    z-index: 10;
+    -webkit-box-shadow: 0px 9px 28px 25px #000000; 
+    box-shadow: 0px 9px 28px 25px #000000;
 }
   
 .headerContent {
@@ -31,7 +36,9 @@
 
 .headerList li {
     padding: 10px;
-    color: #afafaf;
+    color: #171717;
+    font-weight: lighter;
+    /* text-transform: uppercase; */
 }
 
 .headerList a{
@@ -41,8 +48,8 @@
 .headerList a:before{
     content:'';
     position: absolute;
-    height: 2px;
-    background:#afafaf;
+    height: 1px;
+    background:#171717;
     top:95%;
     animation:out 0.4s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }

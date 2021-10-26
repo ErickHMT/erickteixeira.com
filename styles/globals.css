@@ -21,7 +21,12 @@ ul {
   margin: 0;
 }
 
-/* img {
-  max-width: 100%;
-  display: block;
-} */
+img {
+  transition: .5s;
+}
+
+img:hover {
+  opacity: .5;
+  cursor: pointer;
+  transform: scale(1.1);
+}

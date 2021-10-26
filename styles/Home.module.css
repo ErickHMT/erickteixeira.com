@@ -1,12 +1,16 @@
-.main {
+.galeryContainer {
   /* padding: 2rem 0; */
-  flex: 1;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
+  background: #e4e2df;
 }
 
-.mainImage {
-  /* width: 50px; */
-  margin: 10px;
+/* .mainImage {
+  margin: 0 3px;
+} */
+
+.sketchGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
