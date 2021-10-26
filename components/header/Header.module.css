@@ -30,8 +30,8 @@
 }
 
 .headerList li {
-    padding: 20px;
-    color: #7cdbe7;
+    padding: 10px;
+    color: #afafaf;
 }
 
 .headerList a{
@@ -41,8 +41,8 @@
 .headerList a:before{
     content:'';
     position: absolute;
-    height: 1px;
-    background:#FFF;
+    height: 2px;
+    background:#afafaf;
     top:95%;
     animation:out 0.4s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
