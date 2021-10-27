@@ -4,6 +4,7 @@ import styles from './Galery.module.css';
 
 import ImageView from '../../components/imageView';
 
+import banner from '../../public/img/illustrations/quadro-banner.png'
 import quadro1 from '../../public/img/illustrations/quadro1.png'
 import quadro2 from '../../public/img/illustrations/quadro2.png'
 import quadro3 from '../../public/img/illustrations/quadro3.png'
@@ -76,17 +77,10 @@ export default function Galery() {
                 : null
             }
 
-            {/* <div className={styles.galeryHeader}>
-                <span className={styles.mainImage}>
-                    <Image onClick={() => openImageView(quadro1)} src={quadro1} placeholder="blur" width={600} height={700} layout="intrinsic" objectFit="cover" />
-                </span>
-                <span className={styles.mainImage}>
-                    <Image onClick={() => openImageView(quadro2)} src={quadro2} placeholder="blur" width={600} height={700} layout="intrinsic" objectFit="cover" />
-                </span>
-                <span className={styles.mainImage}>
-                    <Image onClick={() => openImageView(quadro3)} src={quadro3} placeholder="blur" width={600} height={700} layout="intrinsic" objectFit="cover" />
-                </span>
-            </div> */}
+            <div className={styles.galeryBanner}>
+                <Image src={banner} placeholder="blur" width={1920} height={700} layout="intrinsic" objectFit="cover" objectPosition="60% top" />
+            </div>
+            
 
             <div className={styles.sectionTitle} id="illustrations">
                 <h2>ILLUSTRATIONS</h2>
