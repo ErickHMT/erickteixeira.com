@@ -5,7 +5,7 @@ import profileImg from '../../public/img/profile.jpg'
 
 export default function About() {
     return(
-        <div className={styles.aboutContainer}>
+        <div className={styles.aboutContainer} id="about">
             <div className={styles.aboutContent}>
                 <Image className={styles.profileImage} src={profileImg} placeholder="blur" width={150} height={150} layout="fixed" objectFit="cover" />
                 <div className={styles.aboutInfo}>

@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function Header() {
     return(
@@ -10,9 +11,9 @@ export default function Header() {
                 </div>
 
                 <ul className={styles.headerList}>
-                    <li><a className={styles.navItem} href="#portfolio">Portfolio</a></li>
-                    <li><a className={styles.navItem} href="#about">Sobre Mim</a></li>
-                    <li><a className={styles.navItem} href="#contact">Contato</a></li>
+                    <li><AnchorLink className={styles.navItem} href="#portfolio">Portfolio</AnchorLink></li>
+                    <li><AnchorLink className={styles.navItem} href="#about">Sobre Mim</AnchorLink></li>
+                    <li><AnchorLink className={styles.navItem} href="#contact">Contato</AnchorLink></li>
                 </ul>
             </div>
         </header>

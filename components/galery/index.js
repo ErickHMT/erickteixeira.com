@@ -9,6 +9,7 @@ import quadro1 from '../../public/img/illustrations/quadro1.png'
 import quadro2 from '../../public/img/illustrations/quadro2.png'
 import quadro3 from '../../public/img/illustrations/quadro3.png'
 
+import lazyTurtle from '../../public/img/illustrations/lazy-turtle.jpg'
 import controlador from '../../public/img/drawings/controlador.png'
 import dependency from '../../public/img/drawings/dependency.png'
 import fairy from '../../public/img/drawings/fairy.png'
@@ -91,6 +92,7 @@ export default function Galery() {
             </div>
 
             <div className={styles.illustrationGrid}>
+                <GaleryImage image={lazyTurtle} title="Lazy Turtle" description="" openImageView={openImageView}/>
                 <GaleryImage image={postApocalipticHover} title="Post Apocaliptic Hover" openImageView={openImageView}/>
                 <GaleryImage image={ozob} title="Ozob" description="" openImageView={openImageView}/>
                 <GaleryImage image={scavenger} title="Scavenger" openImageView={openImageView}/>
