@@ -91,7 +91,7 @@ export default function Galery() {
             </div>
 
             <div className={styles.illustrationGrid}>
-                <GaleryImage image={postApocalipticHover} title="Post Apocaliptic Hover" description="Aqui vai a description" openImageView={openImageView}/>
+                <GaleryImage image={postApocalipticHover} title="Post Apocaliptic Hover" openImageView={openImageView}/>
                 <GaleryImage image={ozob} title="Ozob" description="" openImageView={openImageView}/>
                 <GaleryImage image={scavenger} title="Scavenger" openImageView={openImageView}/>
                 <GaleryImage image={ciberpunk} title="Cyberpunk Character" openImageView={openImageView}/>
@@ -104,7 +104,7 @@ export default function Galery() {
                 <GaleryImage image={rizzo} title="Rizzo" description="Ilustração baseada em um personagem do livro 'Ozob: protocolo molotov'" openImageView={openImageView}/>
                 <GaleryImage image={musician} title="Musician" openImageView={openImageView}/>
                 <GaleryImage image={smartphone} title="Young Girl" openImageView={openImageView}/>
-                <GaleryImage image={soldado} title="Soldier" description="Ilustração não finalizada" openImageView={openImageView}/>
+                {/* <GaleryImage image={soldado} title="Soldier" description="Ilustração não finalizada" openImageView={openImageView}/> */}
                 <GaleryImage image={thinker} title="Charging" openImageView={openImageView}/>
             </div>
 
@@ -114,30 +114,30 @@ export default function Galery() {
             </div>
 
             <div className={styles.sketchGrid}>
-                <GaleryImage image={habilities} title="habilities" openImageView={openImageView}/>
+                <GaleryImage image={habilities} title="Engineer" openImageView={openImageView}/>
                 <GaleryImage image={controlador} title="Pilot" openImageView={openImageView}/>
                 <GaleryImage image={dependency} title="Partnership" openImageView={openImageView}/>
-                <GaleryImage image={fairy} title="fairy" openImageView={openImageView}/>
+                <GaleryImage image={fairy} title="Fairy" openImageView={openImageView}/>
                 <GaleryImage image={carregador} title="Reader" openImageView={openImageView}/>
-                <GaleryImage image={descanso} title="descanso" openImageView={openImageView}/>
-                <GaleryImage image={flowerPicker} title="flowerPicker" openImageView={openImageView}/>
-                <GaleryImage image={flowerWarrior} title="flowerWarrior" openImageView={openImageView}/>
-                <GaleryImage image={maskseller} title="maskseller" openImageView={openImageView}/>
-                <GaleryImage image={explorer} title="explorer" openImageView={openImageView}/>
-                <GaleryImage image={mechanic} title="mechanic" openImageView={openImageView}/>
-                <GaleryImage image={magician} title="magician" openImageView={openImageView}/>
-                <GaleryImage image={menino} title="menino" openImageView={openImageView}/>
-                <GaleryImage image={passeio} title="passeio" openImageView={openImageView}/>
-                <GaleryImage image={piloto} title="piloto" openImageView={openImageView}/>
-                <GaleryImage image={curiosa} title="curiosa" openImageView={openImageView}/>
-                <GaleryImage image={reader} title="reader" openImageView={openImageView}/>
-                <GaleryImage image={recovery} title="recovery" openImageView={openImageView}/>
-                <GaleryImage image={robotUmbrella} title="robotUmbrella" openImageView={openImageView}/>
-                <GaleryImage image={singing} title="singing" openImageView={openImageView}/>
-                <GaleryImage image={processo} title="processo" openImageView={openImageView}/>
-                <GaleryImage image={travel} title="travel" openImageView={openImageView}/>
-                <GaleryImage image={treeGuy} title="treeGuy" openImageView={openImageView}/>
-                <GaleryImage image={umbrellaGuy} title="umbrellaGuy" openImageView={openImageView}/>
+                <GaleryImage image={descanso} title="Rest" openImageView={openImageView}/>
+                <GaleryImage image={flowerPicker} title="Princess" openImageView={openImageView}/>
+                <GaleryImage image={flowerWarrior} title="Garden Warrior" openImageView={openImageView}/>
+                <GaleryImage image={maskseller} title="Mask Seller" openImageView={openImageView}/>
+                <GaleryImage image={explorer} title="Explorer" openImageView={openImageView}/>
+                <GaleryImage image={mechanic} title="Mechanic" openImageView={openImageView}/>
+                <GaleryImage image={magician} title="Fugitive" openImageView={openImageView}/>
+                <GaleryImage image={menino} title="Boy" openImageView={openImageView}/>
+                <GaleryImage image={passeio} title="Abandoned" openImageView={openImageView}/>
+                <GaleryImage image={piloto} title="Crew Member" openImageView={openImageView}/>
+                <GaleryImage image={curiosa} title="Curious" openImageView={openImageView}/>
+                <GaleryImage image={reader} title="Reader" openImageView={openImageView}/>
+                <GaleryImage image={recovery} title="Collectors" openImageView={openImageView}/>
+                <GaleryImage image={robotUmbrella} title="Caregiver" openImageView={openImageView}/>
+                <GaleryImage image={singing} title="Singer" openImageView={openImageView}/>
+                <GaleryImage image={processo} title="Mechanic 2" openImageView={openImageView}/>
+                <GaleryImage image={travel} title="Time Travel" openImageView={openImageView}/>
+                <GaleryImage image={treeGuy} title="Tree Guy" openImageView={openImageView}/>
+                <GaleryImage image={umbrellaGuy} title="Umbrella Guy" openImageView={openImageView}/>
             </div>
         </main>
     );
