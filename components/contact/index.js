@@ -19,7 +19,7 @@ export default function Contact() {
                         </a>
                     </div>
                 </div>
-                <form name="contact" className={styles.contactForm} method="POST" data-netlify="true">
+                <form className={styles.contactForm} method="POST" data-netlify="true">
                     <input type="text" placeholder="Nome" name="name" required/>
                     <input type="email" placeholder="Email" name="email" />
                     <textarea placeholder="Mensagem" name="message" rows="8" required></textarea>
