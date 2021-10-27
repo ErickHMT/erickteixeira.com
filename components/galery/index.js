@@ -48,6 +48,7 @@ import musician from '../../public/img/illustrations/musician.jpg'
 import smartphone from '../../public/img/illustrations/smartphone1.png'
 import soldado from '../../public/img/illustrations/soldado.jpg'
 import thinker from '../../public/img/illustrations/thinker.png'
+import GaleryImage from '../galeryImage';
 
 export default function Galery() {
 
@@ -93,21 +94,21 @@ export default function Galery() {
             </div>
 
             <div className={styles.illustrationGrid}>
-                <Image onClick={() => openImageView(ceita)} src={ceita} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(ciberpunk)} src={ciberpunk} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(curiosity)} src={curiosity} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(scavenger)} src={scavenger} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(postApocalipticHover)} src={postApocalipticHover} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(hermioneGranger)} src={hermioneGranger} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(kvothe)} src={kvothe} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(afraid)} src={afraid} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(ozob)} src={ozob} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(protection)} src={protection} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(rizzo)} src={rizzo} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(musician)} src={musician} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(smartphone)} src={smartphone} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(soldado)} src={soldado} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(thinker)} src={thinker} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <GaleryImage image={ceita} title="Ceita" openImageView={openImageView}/>
+                <GaleryImage image={ciberpunk} title="Ciberpunk" openImageView={openImageView}/>
+                <GaleryImage image={curiosity} title="Curiosity" openImageView={openImageView}/>
+                <GaleryImage image={scavenger} title="Scavenger" openImageView={openImageView}/>
+                <GaleryImage image={postApocalipticHover} title="PostApocalipticHover" openImageView={openImageView}/>
+                <GaleryImage image={hermioneGranger} title="HermioneGranger" openImageView={openImageView}/>
+                <GaleryImage image={kvothe} title="Kvothe" openImageView={openImageView}/>
+                <GaleryImage image={afraid} title="Afraid" openImageView={openImageView}/>
+                <GaleryImage image={ozob} title="Ozob" openImageView={openImageView}/>
+                <GaleryImage image={protection} title="Protection" openImageView={openImageView}/>
+                <GaleryImage image={rizzo} title="Rizzo" openImageView={openImageView}/>
+                <GaleryImage image={musician} title="Musician" openImageView={openImageView}/>
+                <GaleryImage image={smartphone} title="Smartphone" openImageView={openImageView}/>
+                <GaleryImage image={soldado} title="Soldado" openImageView={openImageView}/>
+                <GaleryImage image={thinker} title="Thinker" openImageView={openImageView}/>
             </div>
 
             <div className={styles.sectionTitle} id="sketchs">
@@ -116,30 +117,30 @@ export default function Galery() {
             </div>
 
             <div className={styles.sketchGrid}>
-                <Image onClick={() => openImageView(controlador)} src={controlador} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(dependency)} src={dependency} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(fairy)} src={fairy} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(carregador)} src={carregador} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(descanso)} src={descanso} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(habilities)} src={habilities} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(flowerPicker)} src={flowerPicker} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(flowerWarrior)} src={flowerWarrior} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(maskseller)} src={maskseller} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(explorer)} src={explorer} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(mechanic)} src={mechanic} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(magician)} src={magician} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(menino)} src={menino} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(passeio)} src={passeio} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(piloto)} src={piloto} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(curiosa)} src={curiosa} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(reader)} src={reader} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(recovery)} src={recovery} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(robotUmbrella)} src={robotUmbrella} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(singing)} src={singing} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(processo)} src={processo} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(travel)} src={travel} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(treeGuy)} src={treeGuy} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-                <Image onClick={() => openImageView(umbrellaGuy)} src={umbrellaGuy} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" /> 
+                <GaleryImage image={controlador} title="controlador" openImageView={openImageView}/>
+                <GaleryImage image={dependency} title="dependency" openImageView={openImageView}/>
+                <GaleryImage image={fairy} title="fairy" openImageView={openImageView}/>
+                <GaleryImage image={carregador} title="carregador" openImageView={openImageView}/>
+                <GaleryImage image={descanso} title="descanso" openImageView={openImageView}/>
+                <GaleryImage image={habilities} title="habilities" openImageView={openImageView}/>
+                <GaleryImage image={flowerPicker} title="flowerPicker" openImageView={openImageView}/>
+                <GaleryImage image={flowerWarrior} title="flowerWarrior" openImageView={openImageView}/>
+                <GaleryImage image={maskseller} title="maskseller" openImageView={openImageView}/>
+                <GaleryImage image={explorer} title="explorer" openImageView={openImageView}/>
+                <GaleryImage image={mechanic} title="mechanic" openImageView={openImageView}/>
+                <GaleryImage image={magician} title="magician" openImageView={openImageView}/>
+                <GaleryImage image={menino} title="menino" openImageView={openImageView}/>
+                <GaleryImage image={passeio} title="passeio" openImageView={openImageView}/>
+                <GaleryImage image={piloto} title="piloto" openImageView={openImageView}/>
+                <GaleryImage image={curiosa} title="curiosa" openImageView={openImageView}/>
+                <GaleryImage image={reader} title="reader" openImageView={openImageView}/>
+                <GaleryImage image={recovery} title="recovery" openImageView={openImageView}/>
+                <GaleryImage image={robotUmbrella} title="robotUmbrella" openImageView={openImageView}/>
+                <GaleryImage image={singing} title="singing" openImageView={openImageView}/>
+                <GaleryImage image={processo} title="processo" openImageView={openImageView}/>
+                <GaleryImage image={travel} title="travel" openImageView={openImageView}/>
+                <GaleryImage image={treeGuy} title="treeGuy" openImageView={openImageView}/>
+                <GaleryImage image={umbrellaGuy} title="umbrellaGuy" openImageView={openImageView}/>
             </div>
         </main>
     );
