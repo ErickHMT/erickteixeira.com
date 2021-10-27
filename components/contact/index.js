@@ -7,9 +7,10 @@ export default function Contact() {
             <div className={styles.contactContent}>
                 <div className={styles.contactInfo}>
                     <h3>CONTATO</h3>
+                    <p>Sinta-se livre para entrar em contato comigo por qualquer rede social ou email :D</p>
                     <p>erickhenriquemota@gmail.com</p>
 
-                    <div>
+                    <div className={styles.socialIcons}>
                         <a href="https://www.instagram.com/erickhmart/" rel="noreferrer" target="_blank" className={styles.socialIcon}>
                             <img src="/icons/instagram.svg" alt="Icone instagram" width={20} height={20} />
                         </a>

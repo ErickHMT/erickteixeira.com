@@ -94,15 +94,15 @@ export default function Galery() {
             </div>
 
             <div className={styles.illustrationGrid}>
-                <GaleryImage image={ceita} title="Ceita" openImageView={openImageView}/>
+                <GaleryImage image={postApocalipticHover} title="Post Apocaliptic Hover" openImageView={openImageView}/>
+                <GaleryImage image={ozob} title="Ozob" openImageView={openImageView}/>
+                <GaleryImage image={scavenger} title="Scavenger" openImageView={openImageView}/>
                 <GaleryImage image={ciberpunk} title="Ciberpunk" openImageView={openImageView}/>
                 <GaleryImage image={curiosity} title="Curiosity" openImageView={openImageView}/>
-                <GaleryImage image={scavenger} title="Scavenger" openImageView={openImageView}/>
-                <GaleryImage image={postApocalipticHover} title="PostApocalipticHover" openImageView={openImageView}/>
                 <GaleryImage image={hermioneGranger} title="HermioneGranger" openImageView={openImageView}/>
-                <GaleryImage image={kvothe} title="Kvothe" openImageView={openImageView}/>
+                {/* <GaleryImage image={kvothe} title="Kvothe" openImageView={openImageView}/> */}
                 <GaleryImage image={afraid} title="Afraid" openImageView={openImageView}/>
-                <GaleryImage image={ozob} title="Ozob" openImageView={openImageView}/>
+                <GaleryImage image={ceita} title="Ceita" openImageView={openImageView}/>
                 <GaleryImage image={protection} title="Protection" openImageView={openImageView}/>
                 <GaleryImage image={rizzo} title="Rizzo" openImageView={openImageView}/>
                 <GaleryImage image={musician} title="Musician" openImageView={openImageView}/>

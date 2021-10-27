@@ -5,26 +5,39 @@
 .contactContent {
     display: flex;
     max-width: 1200px;
-    padding: 50px 0;
     margin: auto;
-    justify-content: flex-end;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 80px 10px;
 }
 
 .contactInfo {
     display: inherit;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    max-width: 500px;
     /* align-items: center; */
-    margin: auto;
+    /* margin: auto; */
 }
 
 .contactInfo h3 {
-    margin: 0
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.contactInfo p {
+    margin: 5px 0;
+}
+
+.socialIcons {
+    margin-top: 15px;
 }
 
 .socialIcon {
     margin: 5px;
+    background: #ea842d;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .contactForm {
