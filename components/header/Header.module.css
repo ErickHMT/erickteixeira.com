@@ -66,14 +66,15 @@
 
 @media screen and (max-width: 600px) {
     .headerContent h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .headerContent h2 {
-        font-size: .7rem;
+        font-size: .6rem;
     }
 
     .headerList li {
         padding: 5px;
+        font-size: .8rem;
     }
 }

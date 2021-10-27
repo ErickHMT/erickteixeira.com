@@ -78,3 +78,21 @@
 .formButton:hover {
     background: #c06f2a;
 }
+
+@media screen and (max-width: 1000px) {
+    .contactContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contactForm {
+        margin-top: 50px;
+    }
+
+    .formButton {
+        width: 100%;
+    }
+}

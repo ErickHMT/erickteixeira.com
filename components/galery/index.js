@@ -92,20 +92,20 @@ export default function Galery() {
 
             <div className={styles.illustrationGrid}>
                 <GaleryImage image={postApocalipticHover} title="Post Apocaliptic Hover" description="Aqui vai a description" openImageView={openImageView}/>
-                <GaleryImage image={ozob} title="Ozob" openImageView={openImageView}/>
+                <GaleryImage image={ozob} title="Ozob" description="" openImageView={openImageView}/>
                 <GaleryImage image={scavenger} title="Scavenger" openImageView={openImageView}/>
-                <GaleryImage image={ciberpunk} title="Ciberpunk" openImageView={openImageView}/>
+                <GaleryImage image={ciberpunk} title="Cyberpunk Character" openImageView={openImageView}/>
                 <GaleryImage image={curiosity} title="Curiosity" openImageView={openImageView}/>
-                <GaleryImage image={hermioneGranger} title="HermioneGranger" openImageView={openImageView}/>
+                <GaleryImage image={hermioneGranger} title="Hermione Granger" openImageView={openImageView}/>
                 {/* <GaleryImage image={kvothe} title="Kvothe" openImageView={openImageView}/> */}
                 <GaleryImage image={afraid} title="Afraid" openImageView={openImageView}/>
-                <GaleryImage image={ceita} title="Ceita" openImageView={openImageView}/>
+                <GaleryImage image={ceita} title="Cult" openImageView={openImageView}/>
                 <GaleryImage image={protection} title="Protection" openImageView={openImageView}/>
-                <GaleryImage image={rizzo} title="Rizzo" openImageView={openImageView}/>
+                <GaleryImage image={rizzo} title="Rizzo" description="Ilustração baseada em um personagem do livro 'Ozob: protocolo molotov'" openImageView={openImageView}/>
                 <GaleryImage image={musician} title="Musician" openImageView={openImageView}/>
-                <GaleryImage image={smartphone} title="Smartphone" openImageView={openImageView}/>
-                <GaleryImage image={soldado} title="Soldado" openImageView={openImageView}/>
-                <GaleryImage image={thinker} title="Thinker" openImageView={openImageView}/>
+                <GaleryImage image={smartphone} title="Young Girl" openImageView={openImageView}/>
+                <GaleryImage image={soldado} title="Soldier" description="Ilustração não finalizada" openImageView={openImageView}/>
+                <GaleryImage image={thinker} title="Charging" openImageView={openImageView}/>
             </div>
 
             <div className={styles.sectionTitle} id="sketchs">
@@ -114,12 +114,12 @@ export default function Galery() {
             </div>
 
             <div className={styles.sketchGrid}>
-                <GaleryImage image={controlador} title="controlador" openImageView={openImageView}/>
-                <GaleryImage image={dependency} title="dependency" openImageView={openImageView}/>
-                <GaleryImage image={fairy} title="fairy" openImageView={openImageView}/>
-                <GaleryImage image={carregador} title="carregador" openImageView={openImageView}/>
-                <GaleryImage image={descanso} title="descanso" openImageView={openImageView}/>
                 <GaleryImage image={habilities} title="habilities" openImageView={openImageView}/>
+                <GaleryImage image={controlador} title="Pilot" openImageView={openImageView}/>
+                <GaleryImage image={dependency} title="Partnership" openImageView={openImageView}/>
+                <GaleryImage image={fairy} title="fairy" openImageView={openImageView}/>
+                <GaleryImage image={carregador} title="Reader" openImageView={openImageView}/>
+                <GaleryImage image={descanso} title="descanso" openImageView={openImageView}/>
                 <GaleryImage image={flowerPicker} title="flowerPicker" openImageView={openImageView}/>
                 <GaleryImage image={flowerWarrior} title="flowerWarrior" openImageView={openImageView}/>
                 <GaleryImage image={maskseller} title="maskseller" openImageView={openImageView}/>
