@@ -92,7 +92,8 @@ export default function Galery() {
             </div>
 
             <div className={styles.illustrationGrid}>
-                <GaleryImage image={lazyTurtle} title="Lazy Turtle" description="" openImageView={openImageView}/>
+                {/* <GaleryImage image={lazyTurtle} title="Lazy Turtle" description="Essa ilustração foi parte de um desafio lançado pelo Proko, onde o desafio era retratar animais em formas de objetos." openImageView={openImageView}/> */}
+                <GaleryImage image={lazyTurtle} title="Lazy Turtle" openImageView={openImageView}/>
                 <GaleryImage image={postApocalipticHover} title="Post Apocaliptic Hover" openImageView={openImageView}/>
                 <GaleryImage image={ozob} title="Ozob" description="" openImageView={openImageView}/>
                 <GaleryImage image={scavenger} title="Scavenger" openImageView={openImageView}/>

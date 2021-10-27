@@ -14,7 +14,7 @@ export default function ImageView({imageSelected, imageInfo, closeImageView}) {
                         <img src={imageSelected.src} className={styles.image} />
                         <div className={styles.imageInfo}>
                             <h2>{imageInfo.title}</h2>
-                            <p>{imageInfo.description}</p>
+                            {/* <p>{imageInfo.description}</p> */}
                         </div>
                     </div>
                 </div>
