@@ -54,26 +54,29 @@ import GaleryImage from '../galeryImage';
 export default function Galery() {
 
     const [imageSelected, setImageSelected] = useState({});
+    const [imageInfo, setImageInfo] = useState({});
     const [imageViewOpened, setImageViewOpened] = useState(false);
   
     useEffect(() => {
       console.log('imageSelected: ', imageSelected);
     }, [imageSelected])
   
-    const openImageView = (image) => {
+    const openImageView = (image, title, description) => {
       setImageViewOpened(true);
+      setImageInfo({title, description})
       setImageSelected(image);
     }
   
-    const closeImageView = (image) => {
+    const closeImageView = () => {
       setImageViewOpened(false);
+      setImageInfo({});
       setImageSelected({});
     }
 
     return(
         <main className={styles.galeryContainer} id="portfolio">
             { imageViewOpened ?
-                <ImageView imageSelected={imageSelected} closeImageView={closeImageView}/>
+                <ImageView imageSelected={imageSelected} imageInfo={imageInfo} closeImageView={closeImageView}/>
                 : null
             }
 
@@ -88,7 +91,7 @@ export default function Galery() {
             </div>
 
             <div className={styles.illustrationGrid}>
-                <GaleryImage image={postApocalipticHover} title="Post Apocaliptic Hover" openImageView={openImageView}/>
+                <GaleryImage image={postApocalipticHover} title="Post Apocaliptic Hover" description="Aqui vai a description" openImageView={openImageView}/>
                 <GaleryImage image={ozob} title="Ozob" openImageView={openImageView}/>
                 <GaleryImage image={scavenger} title="Scavenger" openImageView={openImageView}/>
                 <GaleryImage image={ciberpunk} title="Ciberpunk" openImageView={openImageView}/>

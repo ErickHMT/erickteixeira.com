@@ -12,8 +12,8 @@
 }
 
 .image {
-    box-shadow: 0px 0px 0px 21px #FFF;
-    height: 85vh;
+    box-shadow: 0px 0px 0px 15px #FFF;
+    height: 75vh;
     width: auto;
     /* object-fit: contain; */
 }
@@ -24,17 +24,24 @@
     transform: scale(1);
 }
 
-.imageContainer {
-    /* height: 50%;
-    width: 50%; */
+.imageInfo {
+    box-shadow: 0px 0px 0px 15px #FFF;
+    background: #FFF;
+    width: 100%;
 }
 
 .closeIcon {
     position: absolute;
     top: 20px;
     right: 30px;
+    cursor: pointer;
 }
 
+
 .closeIcon img {
-    color: white;
+    transition: .5s;
+}
+
+.closeIcon img:hover {
+    transform: scale(1.3);
 }

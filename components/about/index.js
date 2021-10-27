@@ -7,7 +7,7 @@ export default function About() {
     return(
         <div className={styles.aboutContainer}>
             <div className={styles.aboutContent}>
-                {/* <Image className={styles.profileImage} src={profileImg} placeholder="blur" width={150} height={150} layout="fixed" objectFit="cover" /> */}
+                <Image className={styles.profileImage} src={profileImg} placeholder="blur" width={150} height={150} layout="fixed" objectFit="cover" />
                 <div className={styles.aboutInfo}>
                     <h2>Sobre</h2>
                     <p>Meu nome é Erick Teixeira, nasci em Porangatu-GO e hoje atuo profissionalmente como desenvolvedor frontend e estudo ilustração no tempo livre.</p>
