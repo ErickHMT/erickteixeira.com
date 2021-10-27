@@ -1,11 +1,11 @@
-.galeryContainer {
-  /* padding: 2rem 0; */
-  /* display: flex; */
+.content {
+  position: relative;
+}
 
+.galeryContainer {
   justify-content: center;
+  position: relative;
   background: #e4e2df;
-  /* max-width: 1200px;
-  margin: auto; */
 }
 
 /* .mainImage {

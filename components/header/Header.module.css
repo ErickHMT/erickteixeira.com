@@ -1,14 +1,14 @@
 .header {
-    /* background: #191919; */
-    /* color: rgb(235, 235, 235); */
     background: #e6e6e6;
     color: #171717;
     padding-top: 15px;
     padding-bottom: 20px;
+    z-index: 1;
 }
   
 .headerContent {
     max-width: 1200px;
+    padding: 0 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,6 @@
     padding: 10px;
     color: #171717;
     font-weight: lighter;
-    /* text-transform: uppercase; */
 }
 
 .headerList a{
@@ -63,4 +62,18 @@
 @keyframes out{
     0%{ width: calc(100% + 5px); }
     100%{ width: 0; }
+}
+
+@media screen and (max-width: 600px) {
+    .headerContent h1 {
+        font-size: 1.3rem;
+    }
+    
+    .headerContent h2 {
+        font-size: .7rem;
+    }
+
+    .headerList li {
+        padding: 5px;
+    }
 }
