@@ -37,9 +37,10 @@
 
 .illustrationGrid {
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: 50%;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
+  margin:auto;
 }
 
 .sketchGrid {
@@ -49,18 +50,20 @@
   grid-gap: 5px;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .illustrationGrid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 5px;
+    display: block;
+    /* width: 100%; */
+    margin: auto;
   }
   
   .sketchGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  /* .sketchGrid {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 5px;
-  }
-} */
+  } */
+}
