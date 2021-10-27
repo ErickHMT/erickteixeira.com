@@ -69,38 +69,50 @@ export default function Galery() {
     }
 
     return(
-        <main className={styles.galeryContainer}>
+        <main className={styles.galeryContainer} id="portfolio">
             { imageViewOpened ?
                 <ImageView imageSelected={imageSelected} closeImageView={closeImageView}/>
                 : null
             }
 
-            <div className={styles.sectionTitle}>
-            <h2>ILLUSTRATIONS</h2>
-            <p>Seleção de ilustrações</p>
+            {/* <div className={styles.galeryHeader}>
+                <span className={styles.mainImage}>
+                    <Image onClick={() => openImageView(quadro1)} src={quadro1} placeholder="blur" width={600} height={700} layout="intrinsic" objectFit="cover" />
+                </span>
+                <span className={styles.mainImage}>
+                    <Image onClick={() => openImageView(quadro2)} src={quadro2} placeholder="blur" width={600} height={700} layout="intrinsic" objectFit="cover" />
+                </span>
+                <span className={styles.mainImage}>
+                    <Image onClick={() => openImageView(quadro3)} src={quadro3} placeholder="blur" width={600} height={700} layout="intrinsic" objectFit="cover" />
+                </span>
+            </div> */}
+
+            <div className={styles.sectionTitle} id="illustrations">
+                <h2>ILLUSTRATIONS</h2>
+                <p>Seleção de ilustrações</p>
             </div>
 
             <div className={styles.illustrationGrid}>
-            <Image onClick={() => openImageView(ceita)} src={ceita} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(ciberpunk)} src={ciberpunk} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(curiosity)} src={curiosity} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(scavenger)} src={scavenger} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(postApocalipticHover)} src={postApocalipticHover} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(hermioneGranger)} src={hermioneGranger} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(kvothe)} src={kvothe} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(afraid)} src={afraid} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(ozob)} src={ozob} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(protection)} src={protection} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(rizzo)} src={rizzo} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(musician)} src={musician} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(smartphone)} src={smartphone} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(soldado)} src={soldado} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
-            <Image onClick={() => openImageView(thinker)} src={thinker} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(ceita)} src={ceita} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(ciberpunk)} src={ciberpunk} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(curiosity)} src={curiosity} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(scavenger)} src={scavenger} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(postApocalipticHover)} src={postApocalipticHover} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(hermioneGranger)} src={hermioneGranger} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(kvothe)} src={kvothe} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(afraid)} src={afraid} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(ozob)} src={ozob} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(protection)} src={protection} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(rizzo)} src={rizzo} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(musician)} src={musician} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(smartphone)} src={smartphone} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(soldado)} src={soldado} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
+                <Image onClick={() => openImageView(thinker)} src={thinker} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
             </div>
 
-            <div className={styles.sectionTitle}>
-            <h2>SKETCHES</h2>
-            <p>Seleção de sketches</p>
+            <div className={styles.sectionTitle} id="sketchs">
+                <h2>SKETCHES</h2>
+                <p>Seleção de sketches</p>
             </div>
 
             <div className={styles.sketchGrid}>
@@ -128,18 +140,6 @@ export default function Galery() {
                 <Image onClick={() => openImageView(travel)} src={travel} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
                 <Image onClick={() => openImageView(treeGuy)} src={treeGuy} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" />
                 <Image onClick={() => openImageView(umbrellaGuy)} src={umbrellaGuy} placeholder="blur" width={400} height={400} layout="intrinsic" objectFit="cover" /> 
-            </div>
-
-            <div>
-            <span className={styles.mainImage}>
-                <Image src={quadro1} placeholder="blur" width={500} height={600} layout="intrinsic" objectFit="cover" />
-            </span>
-            <span className={styles.mainImage}>
-                <Image src={quadro2} placeholder="blur" width={500} height={600} layout="intrinsic" objectFit="cover" />
-            </span>
-            <span className={styles.mainImage}>
-                <Image src={quadro3} placeholder="blur" width={500} height={600} layout="intrinsic" objectFit="cover" />
-            </span>
             </div>
         </main>
     );

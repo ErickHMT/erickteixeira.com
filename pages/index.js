@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Contact from '../components/contact'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Galery from '../components/galery'
+import About from '../components/about'
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
 
       <Header />
       <Galery />
+      <About />
       <Contact />
       <Footer />
     </>

@@ -1,39 +1,71 @@
 .galeryContainer {
     justify-content: center;
     position: relative;
-    background: #e4e2df;
+    padding-top: 30px;
+
+    /* max-width: 1200px; */
+    padding: 0 10px;
+    margin: auto;
   }
+
+.galeryHeader {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: auto;
+}
   
   /* .mainImage {
     margin: 0 3px;
   } */
   
-  .sectionTitle {
-    padding: 20px 0;
-  }
-  
-  .sectionTitle h2 {
-    margin: 0;
-    font-size: .9rem;
-    text-align: center;
-    font-weight: 600;
-    color: #565656;
-  }
-  
-  .sectionTitle p {
-    margin: 0;
-    text-align: center;
-    color: #565656;
-  }
-  
+.sectionTitle {
+  padding: 20px 0;
+}
+
+.sectionTitle h2 {
+  margin: 0;
+  font-size: .9rem;
+  text-align: center;
+  font-weight: 600;
+  color: #565656;
+}
+
+.sectionTitle p {
+  margin: 0;
+  text-align: center;
+  color: #565656;
+  font-size: .8rem;
+  margin-top: 4px;
+}
+
+.illustrationGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px;
+}
+
+.sketchGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
   .illustrationGrid {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
   }
   
   .sketchGrid {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
   }
+}
