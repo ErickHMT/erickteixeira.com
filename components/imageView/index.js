@@ -9,9 +9,9 @@ export default function ImageView({imageSelected, closeImageView}) {
                 <div className={styles.imageWrapper}>
                     <div className={styles.imageContainer}>
                         <div onClick={() => closeImageView()} className={styles.closeIcon}>
-                            <img src="/icons/close.svg" alt="Icone linkedin" width={20} height={20} />
+                            <img src="/icons/close.svg" alt="Fechar imagem" width={40} height={40} />
                         </div>
-                        <img src={imageSelected.src} className={styles.image} width="500px" height="500px" layout="fixed" objectFit={'contain'} />
+                        <img src={imageSelected.src} className={styles.image} />
                     </div>
                 </div>
             ) : null}

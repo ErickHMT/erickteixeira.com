@@ -78,8 +78,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <div className={styles.content}>
-        <Header />
 
         { imageViewOpened ?
             <ImageView imageSelected={imageSelected} closeImageView={closeImageView}/>
